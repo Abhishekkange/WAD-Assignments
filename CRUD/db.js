@@ -9,6 +9,7 @@ const {MongoClient} = require('mongodb')
 
         client = await MongoClient.connect(url);
         console.log("connected to mongodb");
+        return client.db("pratik");
 
         
     }catch(e){
